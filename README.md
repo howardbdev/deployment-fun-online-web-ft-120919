@@ -7,8 +7,8 @@ _Note:_ remember that your CLI project was called "CLI Data Gem"... while it's p
 ## Outline of today's study group:
 
 1. High-level discussion using this README as a guide
-2. Deploy an existing Rails app to Heroku
-3. Deploy an existing React app to Netlify
+2. Deploy an [existing Rails app] to Heroku
+3. Deploy an [existing React app] to Netlify
 4. ..?..
 5. If we have time, we could run breakouts or have folks try to get their sites up and assist with any bugs that pop up
 
@@ -45,13 +45,13 @@ production:
 
 Note that to run test and development PG databases on your local environment, you'll need to actually download [Postgres] onto your machine and make sure it's running.  We'll talk a bit more about this during lecture.
 
-### URLs for AJAX calls
+### URLs for AJAX calls (CORS config)
 
 On the front end, you'll need to update your base URL anywhere you make an AJAX call.  This could be in async action creators, React components, utility classes or functions, or even in plain ol' Vanilla JS.
 
 ### Auth
 
-If you're using auth, you'll need to ensure you have the proper configuration set up before deployment.  For Rails, if you're using Rails session and a separate frontend, you'll need to white-list your fronted domain.
+If you're using auth, you'll need to ensure you have the proper configuration set up before deployment.  For Rails, if you're using Rails session and a separate frontend, you'll need to white-list your fronted domain.  For other auth tools, you may need to check documentation to see what needs tweaking.
 
 ### API keys
 
@@ -61,3 +61,5 @@ If you're using an external API, you may need to use a key that needs to remain 
 [Heroku]:https://www.heroku.com/
 [Netlify]:https://www.netlify.com/
 [Postgres]:https://www.postgresql.org/
+[existing Rails app]:
+[existing React app]:
